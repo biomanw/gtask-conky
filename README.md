@@ -13,7 +13,7 @@
 ## Installation
 
 
-* [Download](https://github.com/yankuangshi/gTask-conky/archive/master.zip) zip and unzip the project or use git clone to download it 
+* [Download](https://github.com/biomanw/gTask-conky/archive/master.zip) zip and unzip the project or use git clone to download it 
 
 * move conky file in ~/.conky folder  `gtask`, `gtask.png` to the `~/.conky` folder
 
