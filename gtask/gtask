@@ -1,0 +1,92 @@
+#=====================================================================================
+#                               Google task
+# Date    : 23/11/2017
+# Author  : hamid saydi at http://funfunia.ir
+# Version : v1.0
+# License : Distributed under the terms of GNU GPL version 2 or later
+# Documentation English:
+# Documentation persian: 
+#======================================================================================
+
+#======================================================================================
+#                               
+# Source : 
+#
+#======================================================================================
+
+###Settings###
+background yes
+cpu_avg_samples 1
+default_bar_size 200 10
+default_graph_size 200 100
+diskio_avg_samples 10
+double_buffer yes
+extra_newline no
+if_up_strictness address
+net_avg_samples 1
+no_buffers yes
+temperature_unit celsius
+text_buffer_size 2048
+short_units yes
+update_interval 1
+###End Settings###
+
+###Position###
+alignment bottom_right
+gap_x 1350
+gap_y 50
+minimum_size 550 550
+maximum_width 550
+###End Position###
+
+###Borders###
+border_inner_margin 0
+border_outer_margin 00
+border_width 0
+draw_borders no
+draw_graph_borders yes
+draw_outline no
+draw_shades no
+###End Borders###
+
+###Window###
+own_window yes
+own_window_argb_value 0
+own_window_argb_visual yes
+
+#own_window_class systemConky
+own_window_colour 000000
+own_window_hints undecorate,sticky,skip_taskbar,skip_pager,below
+#all options for own_window_type are normal, desktop, dock, panel or override
+own_window_type desktop
+#own_window_type normal
+own_window_transparent yes
+#own_window_title system_conky
+###End Window###
+
+###Font###
+max_text_width 0
+override_utf8_locale yes
+uppercase no
+use_spacer none
+use_xft yes
+xftfont Feena Casual:size=10
+xftalpha 1
+###End Font###
+
+###Defining Colors###
+default_color D6D5D4
+default_outline_color 000000
+default_shade_color 112422
+###End Color###
+
+###Loading lua script###
+###End Loading Lua###
+
+
+TEXT
+${offset 20}${voffset 1200}${font monofur:pixelsize=40}${color 4eafec}To do list:
+${offset -5}${voffset}${font monofur:pixelsize=30}${exec python ~/Downloads/google-task-cli-master/gtask.py -t1|tail -f -n 4}
+
+
+
