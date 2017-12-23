@@ -20,3 +20,4 @@
 * run conky manager and active conky and enjoy it!(maybe need some x and y changes to be ok
 
   
+![gtask](/gtask/gtask.png?raw=true "gtask")
