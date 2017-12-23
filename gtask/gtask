@@ -28,7 +28,7 @@ no_buffers yes
 temperature_unit celsius
 text_buffer_size 2048
 short_units yes
-update_interval 1
+update_interval 3
 ###End Settings###
 
 ###Position###
@@ -86,7 +86,7 @@ default_shade_color 112422
 
 TEXT
 ${offset 20}${voffset 1200}${font monofur:pixelsize=40}${color 4eafec}To do list:
-${offset -5}${voffset}${font monofur:pixelsize=30}${exec python ~/Downloads/google-task-cli-master/gtask.py -t1|tail -f -n 4}
+${offset -5}${voffset}${font monofur:pixelsize=30}${execi 3 python ~/Downloads/google-task-cli-master/gtask.py -t1|head -n 10}
 
 
 
